@@ -1,19 +1,9 @@
-# Bitshares websocket interface (bitsharesjs-ws)
+# GRE-Core websocket interface (GRE-Core-js-ws)
 
-Pure JavaScript Bitshares websocket library for node.js and browsers. Can be used to easily connect to and obtain data from the Bitshares blockchain via public apis or local nodes.
+Pure JavaScript GRE-Core websocket library for node.js and browsers. Can be used to easily connect to and obtain data from the GRE blockchain (which based on bitshares) via public apis or local nodes.
 
 Credit for the original implementation goes to [jcalfeee](https://github.com/jcalfee).
 
-[![npm version](https://img.shields.io/npm/v/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/bitsharesjs-ws)
-[![npm downloads](https://img.shields.io/npm/dm/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/bitsharesjs-ws)
-
-
-## Setup
-
-This library can be obtained through npm:
-```
-npm install bitsharesjs-ws
-```
 
 ## Usage
 
@@ -43,10 +33,10 @@ function updateListener(object) {
 The `set_subscribe_callback` callback (updateListener) will be called whenever an object on the blockchain changes or is removed. This is very powerful and can be used to listen to updates for specific accounts, assets or most anything else, as all state changes happen through object updates. Be aware though that you will receive quite a lot of data this way.
 
 # Witness node endpoints
-This is a non-exhaustive list of endpoints available from the witness_node executable, which provides the API server of Bitshares.
+This is a non-exhaustive list of endpoints available from the witness_node executable, which provides the API server of GRE-Core.
 
 ## database_api
-https://github.com/bitshares/bitshares-core/blob/master/libraries/app/database_api.cpp
+https://github.com/gre-foundation/gre-core/blob/master/libraries/app/database_api.cpp
 
 __Usage examples__
 `Apis.instance().db_api().exec(method, params)`
